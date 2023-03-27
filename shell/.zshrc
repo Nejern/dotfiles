@@ -20,7 +20,7 @@ fi
 # Standard plugins: $ZSH/plugins/
 # Custom plugins:   $ZSH_CUSTOM/plugins/
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions zsh-syntax-highlighting colored-man-pages vi-mode docker rust)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting zsh-completions colored-man-pages vi-mode docker rust)
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
