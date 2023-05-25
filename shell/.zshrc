@@ -20,7 +20,7 @@ fi
 # Standard plugins: $ZSH/plugins/
 # Custom plugins:   $ZSH_CUSTOM/plugins/
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(zsh-autosuggestions zsh-syntax-highlighting zsh-completions colored-man-pages vi-mode docker rust)
+plugins=(zsh-autosuggestions zsh-syntax-highlighting zsh-completions colored-man-pages vi-mode docker rust docker-compose)
 
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -94,7 +94,15 @@ zstyle ':omz:update' frequency 3
 # You may need to manually set your language environment
 #export LANG=en_US.UTF-8
 
+# NeoVim
 alias v=nvim
+
+# ranger
+# Dont load defaults
+#RANGER_LOAD_DEFAULT_RC=FALSE
+
+# bat
+BAT_THEME=gruvbox-dark
 
 alias -s txt='$EDITOR'
 alias -s c='$EDITOR'
@@ -102,7 +110,11 @@ alias -s png='gthumb'
 alias -s jpg='gthumb'
 alias -s jpeg='gthumb'
 
+# spicetify
 export PATH=$PATH:/home/nejern/.spicetify
 
-#alias qt5w='~/Apps/mxe/usr/bin/i686-w64-mingw32.static-qmake-qt5'
-#alias qt5we='export PATH=~/Apps/mxe/usr/bin:$PATH'
+alias qt5w='~/Apps/mxe/usr/bin/i686-w64-mingw32.static-qmake-qt5'
+export PATH=$PATH:~/Apps/mxe/usr/bin
+
+# Cargo binaries
+export PATH=$PATH:~/.cargo/bin
