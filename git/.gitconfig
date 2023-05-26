@@ -1,14 +1,14 @@
 [core]
-	autocrlf = input
-	eol = lf
+  autocrlf = input
+  eol = lf
 
 [user]
-	email = 5qub6pfp@duck.com
-	name = Nejern
-	signingkey = ~/.ssh/id_ed25519.pub
+  email = 5qub6pfp@duck.com
+  name = Nejern
+  signingkey = ~/.ssh/github/signing.pub
 
 [gpg]
-	format = ssh
+  format = ssh
 
 [help]
   autocorrect = 10
@@ -21,13 +21,13 @@
 
 # Commands
 [commit]
-	gpgsign = true
+  gpgsign = true
 
 [merge]
-	ff = false
+  ff = false
 
 [pull]
-	ff = true
+  ff = true
 
 [color "branch"]
   current = magenta bold
@@ -56,4 +56,4 @@
   hist = "log --graph --date=short --decorate --format=format:'%C(bold blue)%h%C(reset) %C(italic brightwhite)at%C(reset) %C(bold cyan)%ad%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset) %C(italic brightwhite)by%C(reset) %C(ul bold #fe8019)%an%C(reset)%n''            %C(italic brightwhite)message:%C(reset) %C(white)%s%C(reset) %C(reset)'"
 
 [init]
-	defaultBranch = master
+  defaultBranch = master
