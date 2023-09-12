@@ -94,6 +94,12 @@ zstyle ':omz:update' frequency 3
 # You may need to manually set your language environment
 #export LANG=en_US.UTF-8
 
+# virtualenvwrapper
+
+if which virtualenvwrapper.sh > /dev/null; then
+  source virtualenvwrapper.sh > /dev/null
+fi
+
 # NeoVim
 alias v=nvim
 
@@ -110,11 +116,25 @@ alias -s png='gthumb'
 alias -s jpg='gthumb'
 alias -s jpeg='gthumb'
 
+# ls / exa
+if which exa > /dev/null; then
+  # exa
+  alias ls='exa --color=auto'
+  alias l='exa -la'
+  alias la='exa -la'
+  alias ll='exa -l'
+  alias lsa='exa -la'
+else
+  # ls
+  alias ls='ls --color=tty'
+  alias l='ls -lah'
+  alias la='ls -lAh'
+  alias ll='ls -lh'
+  alias lsa='ls -lah'
+fi
+
 # spicetify
 export PATH=$PATH:/home/nejern/.spicetify
 
 alias qt5w='~/Apps/mxe/usr/bin/i686-w64-mingw32.static-qmake-qt5'
 export PATH=$PATH:~/Apps/mxe/usr/bin
-
-# Cargo binaries
-export PATH=$PATH:~/.cargo/bin
