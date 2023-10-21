@@ -116,14 +116,14 @@ alias -s png='gthumb'
 alias -s jpg='gthumb'
 alias -s jpeg='gthumb'
 
-# ls / exa
-if which exa > /dev/null; then
-  # exa
-  alias ls='exa --color=auto'
-  alias l='exa -la'
-  alias la='exa -la'
-  alias ll='exa -l'
-  alias lsa='exa -la'
+# ls / eza
+if which eza > /dev/null; then
+  # eza
+  alias ls='eza --color=auto'
+  alias l='eza -la'
+  alias la='eza -la'
+  alias ll='eza -l'
+  alias lsa='eza -la'
 else
   # ls
   alias ls='ls --color=tty'
@@ -135,6 +135,9 @@ fi
 
 # spicetify
 export PATH=$PATH:/home/nejern/.spicetify
+# go
+export GOPATH=$HOME/.go
+export PATH=$PATH:$GOPATH/bin
 
 alias qt5w='~/Apps/mxe/usr/bin/i686-w64-mingw32.static-qmake-qt5'
 export PATH=$PATH:~/Apps/mxe/usr/bin
