@@ -1,3 +1,4 @@
 [submodule "nvim/.config/nvim"]
 	path = nvim/.config/nvim
-	url = git@github.com:Nejern/v
+	url = https://github.com/Nejern/v
+	branch = master
