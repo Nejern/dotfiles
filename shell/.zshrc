@@ -133,11 +133,9 @@ else
   alias lsa='ls -lah'
 fi
 
-# spicetify
-export PATH=$PATH:/home/nejern/.spicetify
+# mkdir
+alias md='mkdir -p'
+
 # go
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
-
-alias qt5w='~/Apps/mxe/usr/bin/i686-w64-mingw32.static-qmake-qt5'
-export PATH=$PATH:~/Apps/mxe/usr/bin
