@@ -7,6 +7,7 @@ if [[ `lsb_release -is` = "ManjaroLinux" ]]; then
     sudo pamac install --no-confirm stow
 elif [[ `lsb_release -is` = "Ubuntu" ]]; then
     sudo apt update
+    sudo apt upgrade
     sudo apt install -y aptitude
     sudo aptitude install -y stow
 fi
