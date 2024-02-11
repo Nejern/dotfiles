@@ -139,3 +139,6 @@ alias md='mkdir -p'
 # go
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
+
+# mxe
+export PATH=/opt/mxe/usr/bin:$PATH
