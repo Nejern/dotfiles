@@ -1,4 +1,5 @@
-if tty | grep /dev/pts > /dev/null; then
+p10k=true
+if tty | grep /dev/pts > /dev/null && $p10k; then
   # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
   # Initialization code that may require console input (password prompts, [y/n]
   # confirmations, etc.) must go above this block; everything else may go below.
@@ -71,6 +72,10 @@ zstyle ':omz:update' frequency 3
 # Caution: this setting can cause issues with multiline prompts in zsh < 5.7.1 (see #5765)
 #COMPLETION_WAITING_DOTS="true"
 
+# Load completion files
+autoload -U compinit
+compinit -i
+
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
 # much, much faster.
@@ -135,6 +140,9 @@ fi
 
 # mkdir
 alias md='mkdir -p'
+
+# rust
+export PATH=$PATH:$HOME/.cargo/bin
 
 # go
 export GOPATH=$HOME/.go
